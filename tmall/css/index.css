@@ -1,0 +1,77 @@
+/*
+1、标签/元素 选择器  div{}
+2、id选择器 唯一的   #id{}
+3、class选择器 可以重复的 class{}
+4、后代选择器 #ul1 li{}
+5、亲子代选择器 #ul1>li{}
+6、分组选择器 #div1,#div2,#div3{}
+7、伪类选择器#header a:hover{}
+8、多类选择器 div.a{} .aa.bb{}
+9、伪元素选择器 #div::after{content:''}
+*/
+/* index.html样式表*/
+#header{
+    /*height设置元素高度32px*/
+    height: 32px;
+    /*background设置元素北京色#f2f2f2*/
+    background: #f2f2f2;
+    /*background: #cccccc;*/
+    /*font-size设置元素内容字体为12px，*/
+    font-size: 12px;
+    /*line-height设置元素内容行高32px，内容行高与元素高度相同使内容文字垂直居中*/
+    line-height: 32px;
+}
+/*p标签id login-info*/
+#login-info{
+    /*float浮动 left左浮动*/
+    float: left;
+}
+/* ul标签id quick-menu*/
+#quick-menu{
+    /*float浮动 right右浮动*/
+    float: right;
+}
+/* ul标签id li标签id .menu  */
+#quick-menu .menu{
+    float: left;
+    /*position设置元素的定位 relative相对定位*/
+    position: relative;
+}
+#header a,#login-info span{
+    /*color设置元素内容字体颜色*/
+    color: #999;
+}
+#header a{
+    /*padding 设置元素的内边距*/
+    padding: 0 14px;
+}
+/*header a:hover 当鼠标放到a标签上会改变字体颜色*/
+#header a:hover{
+    /*color 设置字体颜色*/
+    color:#ff0036;
+}
+#header .triangle::after{
+    content: '';
+    /*border-width设置边框为3px*/
+    border-width: 3px;
+    /*border-style设置边框样式为solid实线边框*/
+    border-style: solid;
+    /*border-top-color设置边框的上边框颜色为。。。*/
+    border-top-color: #bbb;
+    /*border-bottom-color设置边框的下边框为transparent（透明）*/
+    border-bottom-color: transparent;
+    /*border-left-color设置边框的左边框为transparent（透明）*/
+    border-left-color: transparent;
+    /*border-right-color设置边框的右边框为transparent（透明）*/
+    border-right-color: transparent;
+    width: 0;
+    /*position设置元素定位 absolute绝对定位*/
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -2px;
+}
+#header .icon-gouwuchekong{
+    font-size: 12px;
+    color: #ff0036;
+}
