@@ -1,0 +1,31 @@
+/*通用样式表*/
+
+/*样式重置*/
+/* *选中body所有标签 */
+*{
+    /* margin设置元素外边距0 */
+    margin: 0;
+    /* padding设置元素内边距0*/
+    padding: 0;
+}
+/*列表标签*/
+li{
+    /* list-style设置li去掉黑点*/
+    list-style: none;
+}
+/*超链接标签*/
+a{
+    /*text-decoration设置a标签去掉下划线*/
+    text-decoration: none;
+}
+
+.wrapper{
+    /*width设置元素高度1230px*/
+    width: 1230px;
+    /*height设置元素高度100%继承父元素  父元素是header*/
+    height: 100%;
+    /*margin设置元素外边距上下是0，左右自动auto*/
+    margin: 0 auto;
+    /*设置元素背景颜色#ff0000*/
+    /*background: #ff0000;*/
+}
